@@ -35,6 +35,15 @@ Exemplo de resposta:
 
 ```
 
+##### Token Inválido! 403
+
+```
+{
+    "dados": "token invalido."
+}
+
+```
+
 ##### Falha na autenticação! 401
 Caso essa resposta aconteça, isso significa que aconteceu alguma falha durante o processo de autenticação da requisição. Motivos: Token inválido, Token expirado.
 
