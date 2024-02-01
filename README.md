@@ -7,8 +7,15 @@ Esta API é utilizada para login de usuários
 Esse endpoint é responsável por fazer o processo de login.
 #### Parametros form-data
 
+login: Username do usuário cadastrado no sistema.
+senha: Senha do usuário cadastrado no sistema, com aquele determinado Username.
+
+Exemplo:
+
+```
 login: leandro
 senha: 123456
+```
 
 #### Respostas
 ##### OK! 200
@@ -64,3 +71,29 @@ Exemplo de resposta:
 
 ##### Falha na autenticação! 401
 Caso essa resposta aconteça, isso significa que aconteceu alguma falha durante o processo de autenticação da requisição. Motivos: Token inválido, Token expirado.
+
+### GET api/clientes/adicionar
+Esse endpoint é responsável por retornar a listagem de todos os usuarios cadastrados no banco de dados.
+#### Parametros Bearer Token
+
+Token: Bearer Token gerado no Login.
+
+Exemplo:
+Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJuYW1lIjoiTGVhbmRybyBSb2NoYSIsImV4cGlyZXNfaW4iOjE3MDY4ODY0Mzh9.FvfWnOfMKVUv002KVPykVI0rHBkWHCAlfVRZ4vaKbl0
+
+#### Respostas
+##### OK! 200
+Caso essa resposta aconteça você vai receber a listagem de todos os usuários.
+Exemplo de resposta:
+
+```
+
+{
+    "dados": "Dados foram inseridos com sucesso."
+}
+
+```
+
+##### Falha na autenticação! 401
+Caso essa resposta aconteça, isso significa que aconteceu alguma falha durante o processo de autenticação da requisição. Motivos: Token inválido, Token expirado.
+
