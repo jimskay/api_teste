@@ -19,7 +19,7 @@ senha: 123456
 
 #### Respostas
 ##### OK! 200
-Caso essa resposta aconteça você vai receber o bearer token.
+Caso essa resposta aconteça você vai receber token JWT para conseguir acessar endpoints protegidos na API.
 Exemplo de resposta:
 
 ```
