@@ -1,0 +1,25 @@
+{
+	"info": {
+		"_postman_id": "7b050a05-061f-4008-a3bf-2dfb02d4e4fa",
+		"name": "api_PHP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15970645"
+	},
+	"item": [		
+		{
+			"name": "http://localhost/php_api-main/clientes/listar",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJuYW1lIjoiTmV0byBDb3N0YSIsImV4cGlyZXNfaW4iOjE3MDU2NzI4Mjd9.kNRgD65Yf--tbCGMSPA4PNCa6NJAuLntAc9b2Ia9TjI"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost/php_api-main/clientes/listar"
+			},
+			"response": []
+		}
+	]
+}
