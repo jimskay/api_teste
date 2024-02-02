@@ -77,6 +77,12 @@ Exemplo de resposta:
 }
 
 ```
+##### Exemplo de chamada CURL:
+```
+curl -X GET \
+  --url 'http://localhost/api/clientes/listar' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEiLCJuYW1lIjoiTmV0byBDb3N0YSIsImV4cGlyZXNfaW4iOjE3MDU3NDEwNjZ9.WgwRzY7Wp41UqiZ4mAOay13_DR-mdZpun7ehzDR87-w'
+```
 
 ##### Falha na autenticação! 401
 Caso essa resposta aconteça, isso significa que aconteceu alguma falha durante o processo de autenticação da requisição. Motivos: Token inválido, Token expirado.
